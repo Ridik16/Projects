@@ -78,10 +78,12 @@ btn.addEventListener("click", function () {
     } else {
       userName.classList.remove("_incorect");
     }
-  } else if (typeof phone.value == "number") {
+  } else if (typeof phone.value == "string") {    //----------NOT WORKING
+
+    debugger;
     //Phone Control
     const telPattern = /^\+?1?\s*?\(?\d{3}(?:\)|[-|\s])?\s*?\d{3}[-|\s]?\d{4}$/i;
-    debugger;
+
     if (phone.value.search(telPattern) < 0) {
       phone.classList.add("_incorect");
       // phone.nextElementSibling.innerHTML = "Invalid phone, example (+1 555-555-5555)";
