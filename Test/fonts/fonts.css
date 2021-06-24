@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open-Sans/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/Open-Sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Open-Sans/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../fonts/Open-Sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('../fonts/Open-Sans/OpenSans-Regular-webfont.svg#Open SansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open-Sans/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/Open-Sans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Open-Sans/OpenSans-Bold-webfont.woff') format('woff'),
+        url('../fonts/Open-Sans/OpenSans-Bold-webfont.ttf') format('truetype'),
+        url('../fonts/Open-Sans/OpenSans-Bold-webfont.svg#Open SansBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Banny';
+    src: url('../fonts/Banny/Banny-BoldRound.eot');
+    src: url('../fonts/Banny/Banny-BoldRound.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Banny/Banny-BoldRound.woff') format('woff'),
+        url('../fonts/Banny/Banny-BoldRound.ttf') format('truetype'),
+        url('../fonts/Banny/Banny-BoldRound.svg#Open Banny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
