@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    background-color: #BEBEBE;
+}
+
+.main {
+    padding: 0 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    &__header {
+        position: relative;
+    }
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+.header {
+    &__title {
+        font-family: "Grtsk-Tera", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 28px;
+        letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
+        color: #000;
+        left: 46%;
+
+        span {
+            position: absolute;
+            top: 0;
+            // left: 0;
+            overflow: hidden;
+            transform: translateX(100%);
+            transition: transform .5s ease;
+
+            &::before {
+                display: inline-block;
+                content: attr(data-content);
+                //color to be filled
+                color: #BEBEBE;
+                transform: translateX(-100%);
+                transition: transform .5s ease;
+            }
+        }
+
+        &:hover {
+            text-shadow:
+                -0 -1px 0 #000000,
+                0 -1px 0 #000000,
+                -0 1px 0 #000000,
+                0 1px 0 #000000,
+                -1px -0 0 #000000,
+                1px -0 0 #000000,
+                -1px 0 0 #000000,
+                1px 0 0 #000000,
+                -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000,
+                -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
+
+            span {
+                transform: translateX(0);
+
+                &::before {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    &__lang {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+
+        &:hover>.lang__list {
+            display: flex;
+        }
+    }
+}
+
+.nav {
+    display: none;
+}
+
+
+.nav__toggle {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    order: 3;
+    cursor: pointer;
+    z-index: 1;
+
+    &-line,
+    &-line:before,
+    &-line:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 2px;
+        width: 24px;
+        background: #fff;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 300ms ease-in-out;
+    }
+
+    &-line:before {
+        top: -7px;
+    }
+
+    &-line:after {
+        bottom: -7px;
+    }
+
+    &._active &-line {
+        background-color: transparent;
+
+        &:before,
+        &:after {
+            top: 0;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.lang {
+    &__tongue {
+        margin-right: 16px;
+        border: 1px solid #ffff;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style: none;
+        text-transform: uppercase;
+        height: 40px;
+        align-items: center;
+        display: none;
+    }
+
+    &__link {
+        font-family: 'Grtsk-Peta', sans-serif;
+        color: #ffff;
+        padding: 16px 5px;
+        opacity: .8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.tongue {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ask {
+    font-family: "Grtsk-Giga", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #373737;
+    transform: translateY(-50%);
+    position: absolute;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &__left {
+        transform: rotate(-90deg);
+        left: 0;
+    }
+
+    &__right {
+        transform: rotate(90deg);
+        right: 0;
+    }
+
+    &__bottom {
+        bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    &::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: black;
+        transition: 300ms;
+        background-color: #ffff;
+
+    }
+
+    &:hover {
+        color: #ffff;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.middle__title {
+    font-family: "Grtsk-Giga", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    // font-size: 82px;
+    font-size: 54px;
+    line-height: 90px;
+    color: #373737;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.middle__title h1 {
+    max-width: 1024px;
+}
+
+.ball {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background: #FFCB46;
+    filter: blur(35px);
+    justify-self: center;
+
+    &-wrapper {
+        position: absolute;
+    }
+}
+
+.diagonal__text {
+    font-family: 'Grtsk-Giga', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #BEBEBE;
+    font-size: 52px;
+    text-transform: uppercase;
+    position: absolute;
+    transform: rotate(-30deg);
+    opacity: 0.1;
+    white-space: nowrap;
+    width: 120%;
+    left: -75px;
+    top: 40%;
+
+    marquee {
+        display: block;
+        text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+
+        &:first-child {
+            transform: rotate(-180deg);
+        }
+    }
+}
+// Wheel
+@keyframes rotating {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    animation: rotating 10s linear infinite;
+    transform: rotate(0rad);
+}
+
+.wheel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

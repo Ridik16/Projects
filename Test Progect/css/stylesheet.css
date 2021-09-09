@@ -1,0 +1,60 @@
+@font-face {
+    /*title*/
+    font-family: 'Grtsk-Tera';
+    src: url('../fonts/grtsk-Tera/GrtskTera-Semibold.eot'),
+        url('../fonts/grtsk-Tera/GrtskTera-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/grtsk-Tera/GrtskTera-Semibold.woff2') format('woff2'),
+        url('../fonts/grtsk-Tera/GrtskTera-Semibold.woff') format('woff'),
+        url('../fonts/grtsk-Tera/GrtskTera-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    /*MAIN title*/
+    font-family: 'Grtsk-Giga';
+    src: url('../fonts/grtsk-Giga/GrtskGiga-Bold.eot'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Bold.woff2') format('woff2'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Bold.woff') format('woff'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    /*Questions*/
+    font-family: 'Grtsk-Giga';
+    src: url('../fonts/grtsk-Giga/GrtskGiga-Semibold.eot'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Semibold.woff2') format('woff2'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Semibold.woff') format('woff'),
+        url('../fonts/grtsk-Giga/GrtskGiga-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    /*RUNNING DIAGONAL title*/
+    font-family: 'Grtsk-Giga';
+    src: url('../fonts/grtsk-Giga/GrtskGiga-BoldItalic.eot'),
+        url('../fonts/grtsk-Giga/GrtskGiga-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/grtsk-Giga/GrtskGiga-BoldItalic.woff2') format('woff2'),
+        url('../fonts/grtsk-Giga/GrtskGiga-BoldItalic.woff') format('woff'),
+        url('../fonts/grtsk-Giga/GrtskGiga-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    /*Lang*/
+    font-family: 'Grtsk-Peta';
+    src: url('../fonts/grtsk-Peta/GrtskPeta-Regular.eot'),
+        url('../fonts/grtsk-Peta/GrtskPeta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/grtsk-Peta/GrtskPeta-Regular.woff2') format('woff2'),
+        url('../fonts/grtsk-Peta/GrtskPeta-Regular.woff') format('woff'),
+        url('../fonts/grtsk-Peta/GrtskPeta-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
